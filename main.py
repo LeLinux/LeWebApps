@@ -232,13 +232,12 @@ sb.call(["surf", "{url}"])
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
 
-
     qdarktheme.setup_theme()
 
     app.setFont(QtGui.QFont("Ubuntu Mono"))
 
-    lefiles = LeWebApps()
-    lefiles.resize(800, 600)
-    lefiles.show()
+    lewebapps = LeWebApps()
+    lewebapps.resize(800, 600)
+    lewebapps.show()
 
     sys.exit(app.exec())
